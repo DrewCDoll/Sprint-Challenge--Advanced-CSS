@@ -1,1 +1,57 @@
 // Navigation code here
+.top-nav {
+    height: 20%;
+    padding-bottom: 1.5rem;
+    background-color: @nav-bg;
+    opacity: 0.8; //add some opacity
+    filter: alpha(opacity=50);
+    border: 1px solid @nav-border;
+    .flexStatus(column, center, center);
+    // make it sticky
+    position: sticky;
+    top: 0;
+
+    h1 {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    ul {
+        width: 33%;
+        .flexStatus(row, space-evenly, center);
+        li a {
+            text-decoration: none;
+            color: @main-font-color;
+            line-height: 1.5;
+            font-size: 1.6rem;
+            font-weight: bold;
+        
+            // add automation
+            &:hover {
+                .hoverEffect (pointer, @sea-shell);
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+        }
+
+
+        }
+    }
+
+    //Mobile Styling
+    
+    @media @tablet {
+        ul {
+            flex-wrap: nowrap;
+            width: 66%;
+        }
+    }
+
+    @media @phone {
+        ul {
+            width: 100%;
+        }
+    }
+
+}

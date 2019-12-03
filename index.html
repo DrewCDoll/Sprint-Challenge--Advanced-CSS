@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>SpaceWalkers</title>
 
@@ -18,10 +19,27 @@
 
  <!-- navigation code here -->
 
+  <nav class="top-nav">
+    <h1>SpaceWalkers</h1>
+    <ul class="container">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul><!--nav-menu-->
+  </nav><!--top-nav-->
+
+
+
+
   <div class="container home">
 
     <header class="intro">
        <!-- image code here -->
+      <div class="fullWidthImg">
+        <img src="img/main-header.png" alt="Image of Earth from Space">
+      </div> 
 
       <h2>Lift Off</h2>
     
@@ -49,11 +67,10 @@
 
         <p>The Earth was small, light blue, and so touchingly alone, our home that must be defended like a holy relic. The Earth was absolutely round.</p>
       
-        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
+        <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p><br><br>
       
-        <div class="btn">
-          Sign Up
-        </div>
+        <button class="btn" onclick="window.location.href = 'signup.html' ; ">Sign Up</button>          
+        
       </div>
       
       <div class="walk-img">
@@ -67,5 +84,6 @@
     </footer>
 
   </div>
+
 </body>
 </html>

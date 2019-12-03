@@ -32,15 +32,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
+
 1. What is the difference between an adaptive website and a fully responsive website?
+
+Responsive designs respond to changes in viewpoint/browser width/hiegth at any given point. Adaptive designs change at specific breakpoints. Responsive is harder to code by looks better (smoother?) as the browser is resized.
 
 2. Describe what it means to be mobile first vs desktop first.
 
+Mobile first design begins with the assumption that the site will be viewed on mobile devices. The base code is designed for mobile viewing and @media statements scale up from mobile devices to tablets/desktops.  Desktop first assumes the site will be viewed on a desktop and the base code is designed around that premise, with @media statements scaling down the site for toblet and mobile devices.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+
+Most (?) browsers have a default font sise of 16px. Since "rem" changes font size based of the root font size, calculations of changing font size for h1, h2, etc. can be cumbersome.  By using "font-size: 62.5%" the root font size is changed to the equivalent of 10px with makes setting font isze by rem a simple matter of multiplying or dividing by 10.
+
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing allows you to more easily declare variables, including size variables for @meadi statements. It also allows for the automation of repetitive styling, including the use of parameters with function-like routines.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Favorite: Parametric mixins. I love the ability to create routines that are reusable across different projects.  
+Trouble: Not knowing enough. I don't know what I don't know, so I am sure there are styling issues I'm struggling with that if I knew more of what LESS could do would be easily resolved. That will get better with experience.
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
